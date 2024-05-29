@@ -1,0 +1,12 @@
+.main-container{
+    text-align: center;
+}
+.main-container h2{
+    font-weight:400;
+    padding:  25px;
+    font-size: 50px;
+}
+.main-container p{
+    letter-spacing: 0.1rem;
+    
+}

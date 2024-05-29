@@ -1,0 +1,90 @@
+
+.over-headerr {
+  padding-left: 150px;
+  font-size: 42px;
+  font-weight: 400;
+  margin-top: 50px;
+  --font-heading-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Ubuntu, Helvetica Neue, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol;
+}
+.oversized-image-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.oversized-image-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px black;
+}
+.oversized-image-details {
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+.oversize-image {
+  width: 350vw;
+  cursor: pointer;
+ 
+}
+/* .oversize-image:hover{
+  width: 550px;
+} */
+.product-title:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.view-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.view-button {
+  width: 120px;
+  height: 45px;
+  background-color: black;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+/* Keep images responsive */
+.oversize-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Adjustments to other styles */
+.over-header {
+  padding-left: 5%; /* Adjust based on your design */
+  font-size: 3vw; /* Adjust based on your design */
+  margin-top: 2vw; /* Adjust based on your design */
+}
+
+.oversized-image-grid {
+  padding: 0 5%; /* Adjust based on your design */
+}
+
+.oversized-image-card {
+  flex: 1 1 30%; /* Adjust based on your design */
+  max-width: 30%; /* Adjust based on your design */
+}
+
+/* Add media query for smaller screens */
+
+@media (max-width:700px){
+  .over-headerr{
+    padding-left: 60px;
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 20px;
+    
+  }
+}
