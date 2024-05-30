@@ -8,6 +8,7 @@ import Shop from "./components/pages/shop";
 import OversizedMoreData from "./components/pages/Oversized T-shirts/Page1/DetailsPage/OversizedMoreData.";
 import OversizedT1 from "./components/pages/Oversized T-shirts/Page1/OversizedT1";
 import OversizedT2 from "./components/pages/Oversized T-shirts/Page2/OversizedT2";
+import Contact from "./components/pages/Contact/Contact";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
 
           <Route path="/pages" element={<Pages />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/contact" element={<Contact/>} />
         </Routes>
         <Footer />
       </Router>
