@@ -1,0 +1,62 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .input-group label {
+    margin-bottom: 5px;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .input-group input {
+    width: calc(100% - 20px);
+  }
+  
+  .input-group textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #1a3b1b;
+  }
+.contact-form{
+    margin-top: 150px;
+}  
+.contact-text{
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: 100;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

@@ -23,11 +23,14 @@ function Navbar() {
       </div>
       <div className={state === false ? "navbar" : "navbar1"}>
         <div className={state === false ? "nav-items" : "nav-item1"}>
+          <Link to={"/"}>
           <img
             className={state === false ? "logo-image" : "logo-image1"}
             src={logo}
             alt="logo-image"
           />
+          </Link>
+        
           <ul className={state === false ? "navbar-nav" : "navbar-nav1"}>
             <Link
               className={state === false ? "Nav-link" : "Nav-link1"}
