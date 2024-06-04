@@ -1,6 +1,6 @@
 import jadePlain from "./Jadefrontoversizedplaintshirtformen.webp";
 import blackPlain from "./blackfrontoversizedtshirtformen.webp";
-import whitePlain from "./whitefrontoversizedtshirtformen.webp";
+import whitePlain from "./whitefrontplain.webp";
 import camelPlain from "./camelfrontoversizedtshirtformen.webp";
 import plainblack from "./plain black.webp";
 import camalplain from "./camelplain.webp";
@@ -8,6 +8,8 @@ import denimblueplain from "./denimblueplain.webp";
 import greyplain from "./greyplain.webp"; 
 import jadeplains from "./jadeplains.webp";
 import lilacplain from "./lilacplain.webp";
+import salmonpink from "./salmonpinkplain.webp";
+import whiteplain from "./whiteplain.webp";
 export const Data = [
   {
     id: 1,
@@ -67,6 +69,18 @@ export const Data = [
     id: 10,
     image: lilacplain,
     title: "Lilac plain Oversized T-shirt",
+    price: "Rs.499.00",
+  },
+  {
+    id: 11,
+    image: salmonpink,
+    title: "Salmonpink plain Oversized T-shirt",
+    price: "Rs.499.00",
+  },
+  {
+    id: 12,
+    image: whiteplain,
+    title: "White plain Oversized T-shirt",
     price: "Rs.499.00",
   },
 ];

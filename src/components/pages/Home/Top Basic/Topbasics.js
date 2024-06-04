@@ -1,5 +1,6 @@
 import React from "react";
 import "./topbasics.css";
+import { Link} from "react-router-dom";
 import { Data } from "./topBasicimages/TopbasicData";
 
 function Topbasics() {
@@ -20,7 +21,10 @@ function Topbasics() {
         ))}
       </div>
       <div className="view-div">
+        <Link to={"/oversized-basics"}>
         <button className="view-button">view all</button>
+        </Link>
+       
       </div>
     </div>
   );
