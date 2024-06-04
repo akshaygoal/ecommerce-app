@@ -9,9 +9,8 @@ function OversizedT2() {
   // const [data, setData] = useState(Data);
   const page1 = Data.filter(item => item.id >= 13);
   return (
-    <div className="over-main">
-      <h1 className="over-header">Oversized T-shirts</h1>
-
+    <div className="over-main3">
+  
       <div className="oversized-image-grid">
 
         {page1.map((item) => (

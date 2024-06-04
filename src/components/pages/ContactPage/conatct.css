@@ -75,6 +75,7 @@ button:hover {
 }
 @media (max-width: 800px) {
   .input-group {
+    margin-left: 10px;
     display: block;
     flex-direction: row;
     margin-bottom: 6px;
@@ -87,10 +88,12 @@ button:hover {
     width: 100%;
   }
   .contact-text {
+    margin-left: 10px;
     margin-bottom: 50px;
     font-size: 40px;
     font-weight: 100;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
+  
 }

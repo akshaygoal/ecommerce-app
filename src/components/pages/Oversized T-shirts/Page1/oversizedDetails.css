@@ -1,6 +1,10 @@
 .oversize-link {
   color: black;
 }
+.over-main2, .over-main3{
+  margin-top: 100px;
+}
+
 .details-main-container {
   display: flex;
   justify-content: center;

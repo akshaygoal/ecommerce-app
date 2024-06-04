@@ -2,6 +2,7 @@ import jadePlain from "./Jadefrontoversizedplaintshirtformen.webp"
 import blackPlain from "./blackfrontoversizedtshirtformen.webp"
 import whitePlain from "./whitefrontoversizedtshirtformen.webp"
 import camelPlain from "./camelfrontoversizedtshirtformen.webp"
+import fullblack from "./blackplainoversizedtshirtformen";
 export const Data = [
     {
       id: 1,
@@ -26,5 +27,11 @@ export const Data = [
         image: camelPlain,
         title: "Camel Plain Oversized T-Shirt",
         price: "Rs.599.00",
+      },
+      {
+        id: 5,
+        image: fullblack,
+        title: "blackplainoversizedtshirtformen",
+        price: "Rs.499.00",
       },
     ]

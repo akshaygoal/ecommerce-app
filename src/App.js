@@ -8,6 +8,7 @@ import OversizedMoreData from "./components/pages/Oversized T-shirts/Page1/Detai
 import OversizedT1 from "./components/pages/Oversized T-shirts/Page1/OversizedT1";
 import OversizedT2 from "./components/pages/Oversized T-shirts/Page2/OversizedT2";
 import Contact from "./components/pages/ContactPage/Contact";
+import Basics from "./components/pages/Oversized-Base/basics";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/oversized-page2" element={<OversizedT2 />} />
           <Route path="/oversized-tees/:id" element={<OversizedMoreData />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/oversized-basics" element={<Basics/>} />
         </Routes>
         <Footer />
       </Router>
