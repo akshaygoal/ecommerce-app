@@ -2,7 +2,7 @@ import React from "react";
 import "./basics.css";
 import { Data } from "../Home/Top Basic/topBasicimages/TopbasicData";
 function Basics() {
-  const page1 = Data.filter((item) => item.id <= 8);
+  const page1 = Data.filter((item) => item.id <= 12);
   return (
     <div>
       <div className="over-mainn">
