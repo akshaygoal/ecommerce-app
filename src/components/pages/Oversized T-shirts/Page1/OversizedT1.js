@@ -1,6 +1,5 @@
 import React from "react";
 import "../Page1/oversizedDetails.css";
-
 import { Link } from "react-router-dom";
 import { GoChevronRight, GoChevronLeft } from "react-icons/go";
 import { Data } from "../../Home/Oversized T-shirts/oversizeData";
