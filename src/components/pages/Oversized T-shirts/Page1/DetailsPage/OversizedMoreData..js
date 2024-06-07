@@ -4,6 +4,7 @@ import { CiDeliveryTruck } from "react-icons/ci";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Datas from "./DetaileData";
+import OversizedT2 from "../../Page2/OversizedT2";
 
 
 
@@ -20,6 +21,7 @@ function OversizedMoreData() {
   if (!data) return <div>Loading...</div>;
 
   return (
+    <div className="main" >
     <div className="details-main-container">
       <img src={data.image} alt="singleImage" className="product-image" />
       <div className="Details-info">
@@ -48,7 +50,11 @@ function OversizedMoreData() {
         <br />
         <button className="cart-btn">Add to cart</button>
       </div>
+     
     </div>
+    <OversizedT2/>
+    </div>
+   
   );
 }
 
