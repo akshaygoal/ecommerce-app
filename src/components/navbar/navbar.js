@@ -59,9 +59,9 @@ function Navbar() {
             </Link>
             <Link
               className={state === false ? "Nav-link" : "Nav-link1"}
-              to={"/basic-tees"}
+              to={"/regular-tees"}
             >
-              <li className="nav-item">Basic Tees</li>
+              <li className="nav-item">Regular Tees</li>
             </Link>
             <Link
               className={state === false ? "Nav-link" : "Nav-link1"}
