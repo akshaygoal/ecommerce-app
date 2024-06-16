@@ -121,6 +121,22 @@
   margin-top: 1;
   cursor: pointer;
 }
+.active{
+  text-align: center;
+  width: 80px;
+  margin: 0.5rem 0.3rem 0.1rem 0;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 20px;
+
+  background-color: black;
+  color:#fff;
+
+}
 @media (max-width: 700px) {
   .details-main-container {
     display: block;
