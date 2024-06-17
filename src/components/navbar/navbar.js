@@ -24,13 +24,13 @@ function Navbar() {
       <div className={state === false ? "navbar" : "navbar1"}>
         <div className={state === false ? "nav-items" : "nav-item1"}>
           <Link to={"/"}>
-          <img
-            className={state === false ? "logo-image" : "logo-image1"}
-            src={logo}
-            alt="logo-image"
-          />
+            <img
+              className={state === false ? "logo-image" : "logo-image1"}
+              src={logo}
+              alt="logo-image"
+            />
           </Link>
-        
+
           <ul className={state === false ? "navbar-nav" : "navbar-nav1"}>
             <Link
               className={state === false ? "Nav-link" : "Nav-link1"}
@@ -45,12 +45,7 @@ function Navbar() {
             >
               <li className="nav-item">Oversized Tees</li>
             </Link>
-            {/* <Link
-              className={state === false ? "Nav-link" : "Nav-link1"}
-              to={"/tees"}
-            >
-              <li className="nav-item">Graphic T-shits</li>
-            </Link> */}
+        
             <Link
               className={state === false ? "Nav-link" : "Nav-link1"}
               to={"/oversized-basics"}
@@ -69,7 +64,10 @@ function Navbar() {
             >
               <li className="nav-item">Hoodies</li>
             </Link>
-            <Link  className={state === false ? "Nav-link" : "Nav-link1"} to={"/contact"}>
+            <Link
+              className={state === false ? "Nav-link" : "Nav-link1"}
+              to={"/contact"}
+            >
               <li className="nav-item">Contact</li>
             </Link>
           </ul>

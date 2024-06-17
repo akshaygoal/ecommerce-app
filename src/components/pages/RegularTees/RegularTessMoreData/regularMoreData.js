@@ -5,11 +5,10 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Data } from "../../Home/Regular Fit Tees/regularFit Images/RegularData";
 
-
-
 function RegularMoreData() {
   const { id } = useParams(); // Extracting id from URL params
   const [data, setData] = useState(null);
+  const [activeSelector, setActiveSelector] = useState();
 
   useEffect(() => {
     // Filtering data based on the id
@@ -18,6 +17,11 @@ function RegularMoreData() {
   }, [id]);
 
   if (!data) return <div>Loading...</div>;
+
+  function activeClickHandler(event){
+    const value = event.target.value;
+    setActiveSelector(value);
+  }
 
   return (
     <div className="details-main-container">
@@ -41,10 +45,10 @@ function RegularMoreData() {
           prepaid orders
         </p>
         <p>Size</p>
-        <button className="size-btn">S</button>
-        <button className="size-btn">M</button>
-        <button className="size-btn">X</button>
-        <button className="size-btn">XL</button>
+        <button value="S" onClick={activeClickHandler} className={activeSelector == "S" ? "active" : "size-btn"}>S</button>
+        <button value="M" onClick={activeClickHandler} className={activeSelector == "M" ? "active" : "size-btn"} >M</button>
+        <button value="L" onClick={activeClickHandler} className={activeSelector == "L" ? "active" : "size-btn"} >L</button>
+        <button value="XL" onClick={activeClickHandler} className={activeSelector == "XL" ? "active" : "size-btn"} >XL</button>
         <br />
         <button className="cart-btn">Add to cart</button>
       </div>

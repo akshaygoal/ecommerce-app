@@ -9,7 +9,9 @@ import OversizedT2 from "../../Page2/OversizedT2";
 function OversizedMoreData() {
   const { id } = useParams(); // Extracting id from URL params
   const [data, setData] = useState(null);
+
   const [activeSelector, setActiveSelector] = useState();
+
   useEffect(() => {
     // Filtering data based on the id
     const filteredData = Datas.find((item) => item.id === parseInt(id)); // Convert id to number
@@ -17,11 +19,13 @@ function OversizedMoreData() {
   }, [id]);
 
   if (!data) return <div>Loading...</div>;
+
   function activeClickHandler(event) {
     const value = event.target.value;
     setActiveSelector(value);
     console.log("activeSelector=>", value);
   }
+  
   return (
     <div className="main">
       <div className="details-main-container">

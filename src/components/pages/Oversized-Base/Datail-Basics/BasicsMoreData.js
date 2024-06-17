@@ -10,7 +10,7 @@ import { Data } from "../../Home/Top Basic/topBasicimages/TopbasicData";
 function BasicsMoreData() {
   const { id } = useParams(); // Extracting id from URL params
   const [data, setData] = useState(null);
-
+const [activeSelector,setActiveSelector]=useState( )
   useEffect(() => {
     // Filtering data based on the id
     const filteredData = Data.find((item) => item.id === parseInt(id)); // Convert id to number
