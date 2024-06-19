@@ -15,13 +15,13 @@ body {
 ul {
   list-style-type: none;
 }
-a{
+a {
   text-decoration: none;
 }
 h1,
 h2,
 h3,
-h4{
+h4 {
   letter-spacing: var(--spacing);
   text-transform: capitalize;
   line-height: 1.25;
@@ -101,10 +101,25 @@ p {
   text-decoration: none;
   transition: 0.6s ease-in-out;
 }
+.active {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.6s ease-in-out;
+  text-decoration: underline;
+  font-size: 1.1rem;
+}
 
 .Nav-link:hover {
   text-decoration: underline;
   color: #fff;
+}
+.Nav-link1 {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  transition: 0.6s ease-in-out;
+}
+.Nav-link1:hover {
+  text-decoration: underline;
 }
 .searct-cart {
   display: flex;
@@ -128,7 +143,7 @@ span {
   height: 30px;
   display: flex;
   cursor: pointer;
-  background:  #1d1919;
+  background: #1d1919;
   padding: 10px 20px;
   border-radius: 30px;
   align-items: center;
@@ -150,18 +165,18 @@ span {
 }
 
 /* after button click */
-.navbar1{
- align-items: center;
+.navbar1 {
+  align-items: center;
   position: absolute;
   width: 80%;
   height: 80%;
   background-color: #1d1919;
   align-items: center;
   transition: 1s ease;
-  animation: expand 1s ease-in-out 1s infinite; 
+  animation: expand 1s ease-in-out 1s infinite;
 }
 .nav-item1 {
- align-items: center;
+  align-items: center;
   margin-bottom: 20px;
   transition: 1s ease;
   animation: expand 1s ease-in-out 1s infinite;
@@ -176,14 +191,15 @@ span {
   line-height: 2.2rem;
   margin-left: 30px;
 }
-.Nav-link1 {
+/* .Nav-link1 {
   color: #fff;
   font-weight: 400;
   font-size: 1.1rem;
+  text-decoration: underline;
 }
 .Nav-link1:hover {
   text-decoration: underline;
-}
+} */
 
 @media (max-width: 800px) {
   span {
@@ -198,13 +214,12 @@ span {
   }
   .navbar {
     display: block;
-    
   }
-.nav-items{
-  top: 0;
-  bottom: 0;
-  align-items: center;
-}
+  .nav-items {
+    top: 0;
+    bottom: 0;
+    align-items: center;
+  }
 
   .searct-cart {
     position: absolute;

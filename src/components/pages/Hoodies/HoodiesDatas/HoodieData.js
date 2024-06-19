@@ -2,7 +2,7 @@ import offlineblack from "./you are offline black.webp";
 import offline from "./you are offline.webp";
 import whitehoodie from "./white hoodie.webp";
 import purplehoodie from "./purple hoodie.webp";
-import blackhoodie from "./158.webp";
+import blackhoodie from "./156.webp";
 import mystery from "./mystery hoodie.webp";
 import liac from "./liac hoodie.webp";
 

@@ -3,25 +3,26 @@ import { CiDeliveryTruck } from "react-icons/ci";
 
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { Data } from "../../Home/Regular Fit Tees/regularFit Images/RegularData";
+import { HData } from "./HoodiesDatas/HoodieData";
 
-function RegularMoreData() {
+
+
+
+function HoodiesMoreData() {
   const { id } = useParams(); // Extracting id from URL params
   const [data, setData] = useState(null);
-  const [activeSelector, setActiveSelector] = useState();
-
+const [activeSelector,setActiveSelector]=useState();
   useEffect(() => {
     // Filtering data based on the id
-    const filteredData = Data.find((item) => item.id === parseInt(id)); // Convert id to number
+    const filteredData = HData.find((item) => item.id === parseInt(id)); // Convert id to number
     setData(filteredData);
   }, [id]);
 
   if (!data) return <div>Loading...</div>;
-
-  function activeClickHandler(event) {
+function activeClickHandler(event){
     const value = event.target.value;
-    setActiveSelector(value);
-  }
+    setActiveSelector(value)
+}
 
   return (
     <div className="details-main-container">
@@ -46,33 +47,33 @@ function RegularMoreData() {
         </p>
         <p>Size</p>
         <button
-          value="S"
-          onClick={activeClickHandler}
-          className={activeSelector == "S" ? "activee" : "size-btn"}
-        >
-          S
-        </button>
-        <button
-          value="M"
-          onClick={activeClickHandler}
-          className={activeSelector == "M" ? "activee" : "size-btn"}
-        >
-          M
-        </button>
-        <button
-          value="L"
-          onClick={activeClickHandler}
-          className={activeSelector == "L" ? "activee" : "size-btn"}
-        >
-          L
-        </button>
-        <button
-          value="XL"
-          onClick={activeClickHandler}
-          className={activeSelector == "XL" ? "activee" : "size-btn"}
-        >
-          XL
-        </button>
+            value="S"
+            onClick={activeClickHandler}
+            className={activeSelector == "S" ? "active" : "size-btn"}
+          >
+            S
+          </button>
+          <button
+            value="M"
+            onClick={activeClickHandler}
+            className={activeSelector == "M" ? "active" : "size-btn"}
+          >
+            M
+          </button>
+          <button
+            value="L"
+            onClick={activeClickHandler}
+            className={activeSelector == "L" ? "active" : "size-btn"}
+          >
+            L
+          </button>
+          <button
+            value="XL"
+            onClick={activeClickHandler}
+            className={activeSelector == "XL" ? "active" : "size-btn"}
+          >
+            XL
+          </button>
         <br />
         <button className="cart-btn">Add to cart</button>
       </div>
@@ -80,4 +81,4 @@ function RegularMoreData() {
   );
 }
 
-export default RegularMoreData;
+export default HoodiesMoreData;

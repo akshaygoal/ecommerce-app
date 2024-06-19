@@ -41,25 +41,25 @@ function Footer() {
           <div className="Quick-link-us">
             <ul className="footer-item-container">
               <h4 className="footer-header">Quick links</h4>
-              <Link className="footer-items" to={"/"}>
+              <Link className="footer-items" to={"/search"}>
                 <li className="footer-items">Search</li>
               </Link>
-              <Link className="footer-items" to={"/oversized-tees"}>
+              <Link className="footer-items" to={"/contact"}>
                 <li className="footer-items">Contact</li>
               </Link>
-              <Link className="footer-items" to={"/tees"}>
+              <Link className="footer-items" to={"/refund"}>
                 <li className="footer-items">Returns & Refunds</li>
               </Link>
-              <Link className="footer-items" to={"/oversized-basics"}>
+              <Link className="footer-items" to={"/privacypolicy"}>
                 <li className="footer-items">Privacy Policy</li>
               </Link>
-              <Link className="footer-items" to={"/basic-tees"}>
+              <Link className="footer-items" to={"/service"}>
                 <li className="footer-items">Terms of Service</li>
               </Link>
-              <Link className="footer-items" to={"/hoodies"}>
+              <Link className="footer-items" to={"/exchange"}>
                 <li className="footer-items">Exchange & Cancellation Policy</li>
               </Link>
-              <Link className="footer-items" to={"/contact"}>
+              <Link className="footer-items" to={"/about"}>
                 <li className="footer-items">About Us</li>
               </Link>
             </ul>

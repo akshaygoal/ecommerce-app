@@ -38,8 +38,10 @@ function OversizedT2() {
         <p>1</p>
         </Link>
         
-     
-        <p>2</p>
+     <Link to={'/oversized-page2'}>
+     <p>2</p>
+     </Link>
+        
       
         <GoChevronRight className="right-arrow" />
       </div>

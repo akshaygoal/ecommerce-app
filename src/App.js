@@ -12,6 +12,10 @@ import Basics from "./components/pages/Oversized-Base/basics";
 import BasicsMoreData from "./components/pages/Oversized-Base/Datail-Basics/BasicsMoreData";
 import Regular from "./components/pages/RegularTees/Regularmain";
 import RegularMoreData from "./components/pages/RegularTees/RegularTessMoreData/regularMoreData";
+import Hoodies from "./components/pages/Hoodies/Hoodies";
+import HoodiesMoreData from "./components/pages/Hoodies/HoodiesMoreDatas";
+import Refunding from "./components/footer/FooterDetails/Refund";
+
 
 
 function App() {
@@ -30,6 +34,9 @@ function App() {
           <Route path="/oversized-basics/:id" element={<BasicsMoreData/>} />
           <Route path="/regular-tees" element={<Regular/>} />
           <Route path="/regular-tees/:id" element={<RegularMoreData/>} />
+          <Route path="/hoodies" element={<Hoodies/>} />
+          <Route path="/hoodies/:id" element={<HoodiesMoreData/>} />
+          <Route path="/refund" element={<Refunding/>} />
         </Routes>
         <Footer />
       </Router>

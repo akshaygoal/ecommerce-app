@@ -31,6 +31,7 @@ function OversizedMoreData() {
       <div className="details-main-container">
         <img src={data.image} alt="singleImage" className="product-image" />
         <div className="Details-info">
+
           <h2 className="title">{data.title}</h2>
           <p className="price">{data.price}</p>
 
@@ -52,28 +53,28 @@ function OversizedMoreData() {
           <button
             value="S"
             onClick={activeClickHandler}
-            className={activeSelector == "S" ? "active" : "size-btn"}
+            className={activeSelector == "S" ? "activee" : "size-btn"}
           >
             S
           </button>
           <button
             value="M"
             onClick={activeClickHandler}
-            className={activeSelector == "M" ? "active" : "size-btn"}
+            className={activeSelector == "M" ? "activee" : "size-btn"}
           >
             M
           </button>
           <button
             value="L"
             onClick={activeClickHandler}
-            className={activeSelector == "L" ? "active" : "size-btn"}
+            className={activeSelector == "L" ? "activee" : "size-btn"}
           >
             L
           </button>
           <button
             value="XL"
             onClick={activeClickHandler}
-            className={activeSelector == "XL" ? "active" : "size-btn"}
+            className={activeSelector == "XL" ? "activee" : "size-btn"}
           >
             XL
           </button>
