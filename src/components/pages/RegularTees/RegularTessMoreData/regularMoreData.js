@@ -4,6 +4,7 @@ import { CiDeliveryTruck } from "react-icons/ci";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Data } from "../../Home/Regular Fit Tees/regularFit Images/RegularData";
+import Regular from "../../Home/Regular Fit Tees/Regular";
 
 function RegularMoreData() {
   const { id } = useParams(); // Extracting id from URL params
@@ -24,6 +25,7 @@ function RegularMoreData() {
   }
 
   return (
+    <div>
     <div className="details-main-container">
       <img src={data.image} alt="singleImage" className="product-image" />
       <div className="Details-info">
@@ -76,6 +78,8 @@ function RegularMoreData() {
         <br />
         <button className="cart-btn">Add to cart</button>
       </div>
+    </div>
+    <Regular/>
     </div>
   );
 }

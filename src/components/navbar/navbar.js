@@ -3,13 +3,14 @@ import "./navbar.css";
 import logo from "../Images/logo.jpg";
 import { NavLink, useLocation } from "react-router-dom";
 import { GoChevronRight, GoChevronLeft } from "react-icons/go";
-import { IoMenu } from "react-icons/io5";
+import { IoMenu,IoCloseSharp  } from "react-icons/io5";
+
 import { TfiSearch } from "react-icons/tfi";
 import { HiMiniShoppingBag } from "react-icons/hi2";
 
 function Navbar() {
   const [state, setState] = useState(false);
-  const [navbar, setNavbar] = useState(false);
+
 
   const [activeSelector, setActiveSelector] = useState();
   const location = useLocation();
@@ -30,17 +31,17 @@ function Navbar() {
         <p> Flate 10% off on all prepaid orders!</p>
         <GoChevronRight />
       </div>
-      <div className={navbar === false ? "navbar" : "navbar1"}>
-        <div className={navbar === false ? "nav-items" : "nav-item1"}>
+      <div className={state === false ? "navbar" : "navbar1"}>
+        <div className={state === false ? "nav-items" : "nav-item1"}>
           <NavLink to={"/"}>
             <img
-              className={navbar === false ? "logo-image" : "logo-image1"}
+              className={state === false ? "logo-image" : "logo-image1"}
               src={logo}
               alt="logo-image"
             />
           </NavLink>
 
-          <ul className={navbar === false ? "navbar-nav" : "navbar-nav1"}>
+          <ul className={state === false ? "navbar-nav" : "navbar-nav1"}>
             <NavLink
             className={state === false ? "Nav-link" : "Nav-link1"}
               to={"/"}
@@ -81,8 +82,9 @@ function Navbar() {
             </NavLink>
           </ul>
 
-          <span onClick={() => setState(!state)}>
-            <IoMenu />
+          <span onClick={() => setState(!state)} className="icon">
+          {state ? <IoCloseSharp /> : <IoMenu />}
+           
           </span>
 
           <div className="searct-cart">

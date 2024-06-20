@@ -209,6 +209,17 @@ span {
     color: rgb(255, 255, 255);
     top: 30px;
   }
+
+  
+  .icon {
+    font-size: 2rem; 
+    cursor: pointer; 
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2); 
+  }
   .box {
     display: none;
   }
@@ -219,6 +230,7 @@ span {
     top: 0;
     bottom: 0;
     align-items: center;
+    text-decoration: underline;
   }
 
   .searct-cart {
@@ -228,5 +240,12 @@ span {
   }
   .navbar-nav {
     display: none;
+  }
+  .active {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease-in-out;
+    text-decoration: underline;
+    font-size: 1.1rem;
   }
 }

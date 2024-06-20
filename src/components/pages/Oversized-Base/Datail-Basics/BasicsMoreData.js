@@ -4,6 +4,7 @@ import { CiDeliveryTruck } from "react-icons/ci";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Data } from "../../Home/Top Basic/topBasicimages/TopbasicData";
+import Topbasics from "../../Home/Top Basic/Topbasics";
 
 
 
@@ -20,6 +21,7 @@ const [activeSelector,setActiveSelector]=useState( )
   if (!data) return <div>Loading...</div>;
 
   return (
+    <div>
     <div className="details-main-container">
       <img src={data.image} alt="singleImage" className="product-image" />
       <div className="Details-info">
@@ -48,7 +50,11 @@ const [activeSelector,setActiveSelector]=useState( )
         <br />
         <button className="cart-btn">Add to cart</button>
       </div>
+      </div>
+      <Topbasics />
+
     </div>
+    
   );
 }
 
