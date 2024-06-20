@@ -1,7 +1,31 @@
+/* Refunding css */
+
 .main-div{
-    margin-top: 100px;
+    margin-top: 150px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin:0 20% ;
+    margin-top: 10%;
 }
 .main-div h1{
    font-weight: 400;
    font-size: 3.4rem;
+   align-items: center;
+   margin-bottom: 40px;
+}
+.para-1, .para-2{
+    letter-spacing: 0.06rem;
+    line-height:1.9rem ;
+    font-family:  Lato, sans-serif;
+    color: #7b7b7bff;
+}
+@media (max-width :750px){
+    .main-div h1{
+font-size: 2.4rem;
+margin-top: 150px;
+    }
+    .main-div{
+        margin:0 5% ;   
+    }
 }

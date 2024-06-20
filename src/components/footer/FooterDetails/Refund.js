@@ -9,7 +9,7 @@ function Refunding() {
           Please be advised that, as of now, we do not have a return and refund
           policy in place. However, should you encounter any issues with the
           product you have received, we encourage you to promptly reach out to
-          our dedicated support team at support@arlostore.com . Our team is
+          our dedicated support team at support@DapperNext.com . Our team is
           committed to providing assistance and resolving any queries you may
           have to ensure your satisfaction.
         </p>
