@@ -4,12 +4,12 @@ import { CiDeliveryTruck } from "react-icons/ci";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Data } from "../../Home/Regular Fit Tees/regularFit Images/RegularData";
-
-
+import Regular from "../../Home/Regular Fit Tees/Regular";
 
 function RegularMoreData() {
   const { id } = useParams(); // Extracting id from URL params
   const [data, setData] = useState(null);
+  const [activeSelector, setActiveSelector] = useState();
 
   useEffect(() => {
     // Filtering data based on the id
@@ -19,7 +19,13 @@ function RegularMoreData() {
 
   if (!data) return <div>Loading...</div>;
 
+  function activeClickHandler(event) {
+    const value = event.target.value;
+    setActiveSelector(value);
+  }
+
   return (
+    <div>
     <div className="details-main-container">
       <img src={data.image} alt="singleImage" className="product-image" />
       <div className="Details-info">
@@ -41,13 +47,39 @@ function RegularMoreData() {
           prepaid orders
         </p>
         <p>Size</p>
-        <button className="size-btn">S</button>
-        <button className="size-btn">M</button>
-        <button className="size-btn">X</button>
-        <button className="size-btn">XL</button>
+        <button
+          value="S"
+          onClick={activeClickHandler}
+          className={activeSelector == "S" ? "activee" : "size-btn"}
+        >
+          S
+        </button>
+        <button
+          value="M"
+          onClick={activeClickHandler}
+          className={activeSelector == "M" ? "activee" : "size-btn"}
+        >
+          M
+        </button>
+        <button
+          value="L"
+          onClick={activeClickHandler}
+          className={activeSelector == "L" ? "activee" : "size-btn"}
+        >
+          L
+        </button>
+        <button
+          value="XL"
+          onClick={activeClickHandler}
+          className={activeSelector == "XL" ? "activee" : "size-btn"}
+        >
+          XL
+        </button>
         <br />
         <button className="cart-btn">Add to cart</button>
       </div>
+    </div>
+    <Regular/>
     </div>
   );
 }

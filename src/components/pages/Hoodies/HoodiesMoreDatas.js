@@ -3,25 +3,28 @@ import { CiDeliveryTruck } from "react-icons/ci";
 
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { Data } from "../../Home/Top Basic/topBasicimages/TopbasicData";
-import Topbasics from "../../Home/Top Basic/Topbasics";
+import { HData } from "./HoodiesDatas/HoodieData";
 
 
 
-function BasicsMoreData() {
+
+function HoodiesMoreData() {
   const { id } = useParams(); // Extracting id from URL params
   const [data, setData] = useState(null);
-const [activeSelector,setActiveSelector]=useState( )
+const [activeSelector,setActiveSelector]=useState();
   useEffect(() => {
     // Filtering data based on the id
-    const filteredData = Data.find((item) => item.id === parseInt(id)); // Convert id to number
+    const filteredData = HData.find((item) => item.id === parseInt(id)); // Convert id to number
     setData(filteredData);
   }, [id]);
 
   if (!data) return <div>Loading...</div>;
+function activeClickHandler(event){
+    const value = event.target.value;
+    setActiveSelector(value)
+}
 
   return (
-    <div>
     <div className="details-main-container">
       <img src={data.image} alt="singleImage" className="product-image" />
       <div className="Details-info">
@@ -43,19 +46,39 @@ const [activeSelector,setActiveSelector]=useState( )
           prepaid orders
         </p>
         <p>Size</p>
-        <button className="size-btn">S</button>
-        <button className="size-btn">M</button>
-        <button className="size-btn">X</button>
-        <button className="size-btn">XL</button>
+        <button
+            value="S"
+            onClick={activeClickHandler}
+            className={activeSelector == "S" ? "active" : "size-btn"}
+          >
+            S
+          </button>
+          <button
+            value="M"
+            onClick={activeClickHandler}
+            className={activeSelector == "M" ? "active" : "size-btn"}
+          >
+            M
+          </button>
+          <button
+            value="L"
+            onClick={activeClickHandler}
+            className={activeSelector == "L" ? "active" : "size-btn"}
+          >
+            L
+          </button>
+          <button
+            value="XL"
+            onClick={activeClickHandler}
+            className={activeSelector == "XL" ? "active" : "size-btn"}
+          >
+            XL
+          </button>
         <br />
         <button className="cart-btn">Add to cart</button>
       </div>
-      </div>
-      <Topbasics />
-
     </div>
-    
   );
 }
 
-export default BasicsMoreData;
+export default HoodiesMoreData;
