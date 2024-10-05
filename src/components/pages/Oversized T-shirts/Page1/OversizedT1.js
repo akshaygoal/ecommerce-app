@@ -9,8 +9,6 @@ function OversizedT1() {
   const page1 = Data.filter((item) => item.id <= 12);
   return (
     <div className="over-main2">
-      
-
       <div className="oversized-image-grid">
         {page1.map((item) => (
           <Link
@@ -29,7 +27,7 @@ function OversizedT1() {
         ))}
       </div>
       <div className="next-page">
-        <Link to={"/oversized-page1"}>
+        <Link to={"/oversized-page"}>
           <GoChevronLeft className="left-arrow" />
         </Link>
 

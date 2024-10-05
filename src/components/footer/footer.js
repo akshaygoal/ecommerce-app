@@ -42,6 +42,7 @@ function Footer() {
             <ul className="footer-item-container">
               <h4 className="footer-header">Quick links</h4>
               <NavLink className="footer-items" to={"/search"}>
+          
                 <li className="footer-items">Search</li>
               </NavLink>
               <NavLink className="footer-items" to={"/contact"}>

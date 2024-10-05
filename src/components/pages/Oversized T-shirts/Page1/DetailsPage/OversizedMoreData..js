@@ -5,8 +5,9 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Datas from "./DetaileData";
 import OversizedT2 from "../../Page2/OversizedT2";
+import AddToCartButton from "../../../../accessories/AddToCartButton";
 
-function OversizedMoreData() {
+function OversizedMoreData({ toggleCart }) {
   const { id } = useParams(); // Extracting id from URL params
   const [data, setData] = useState(null);
 
@@ -14,7 +15,7 @@ function OversizedMoreData() {
 
   useEffect(() => {
     // Filtering data based on the id
-    const filteredData = Datas.find((item) => item.id === parseInt(id)); // Convert id to number
+    const filteredData = Datas.find((item) => item.id === parseInt(id)); 
     setData(filteredData);
   }, [id]);
 
@@ -25,13 +26,12 @@ function OversizedMoreData() {
     setActiveSelector(value);
     console.log("activeSelector=>", value);
   }
-  
+
   return (
     <div className="main">
       <div className="details-main-container">
         <img src={data.image} alt="singleImage" className="product-image" />
         <div className="Details-info">
-
           <h2 className="title">{data.title}</h2>
           <p className="price">{data.price}</p>
 
@@ -79,7 +79,8 @@ function OversizedMoreData() {
             XL
           </button>
           <br />
-          <button className="cart-btn">Add to cart</button>
+          {/* <button className="cart-btn">Add to cart</button> */}
+          <AddToCartButton onClick={toggleCart} />
         </div>
       </div>
       <OversizedT2 />

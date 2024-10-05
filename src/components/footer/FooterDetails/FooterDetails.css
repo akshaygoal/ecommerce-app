@@ -19,6 +19,7 @@
     line-height:1.9rem ;
     font-family:  Lato, sans-serif;
     color: #7b7b7bff;
+    font-size: 1rem;
 }
 @media (max-width :750px){
     .main-div h1{
