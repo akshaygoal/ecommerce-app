@@ -30,11 +30,11 @@ function OversizedT2() {
         ))}
       </div>
       <div className="next-page">
-        <Link to={'/oversized-page1'}>
+        <Link to={'/oversized-Tees'}>
         <GoChevronLeft  className="left-arrow"/>
         </Link>
         
-        <Link to={'/oversized-page1'}>
+        <Link to={'/oversized-Tees'}>
         <p>1</p>
         </Link>
         
@@ -42,8 +42,9 @@ function OversizedT2() {
      <p>2</p>
      </Link>
         
-      
+      <Link to={'/oversized-page2'}>
         <GoChevronRight className="right-arrow" />
+        </Link>
       </div>
     </div>
   );

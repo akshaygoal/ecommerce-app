@@ -97,7 +97,7 @@ function App() {
            <Route path="/login" element={<LoginForm/>} />
           <Route path="/register" element={<RegisterForm />} /> 
           <Route path="/" element={<Home />} />
-          <Route path="/oversized-page" element={<OversizedT1 />} />
+          <Route path="/oversized-Tees" element={<OversizedT1 />} />
           <Route path="/oversized-page2" element={<OversizedT2 />} />
           <Route path="/oversized-tees/:id" element={<OversizedMoreData />} />
           <Route path="/contact" element={<Contact />} />

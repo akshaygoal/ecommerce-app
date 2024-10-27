@@ -18,7 +18,7 @@ function Footer() {
               <NavLink className="footer-items" to={"/"}>
                 <li className="footer-items">Home</li>
               </NavLink>
-              <NavLink className="footer-items" to={"/oversized-page1"}>
+              <NavLink className="footer-items" to={"/oversized-Tees"}>
                 <li className="footer-items">Oversized Tees</li>
               </NavLink>
               {/* <Link className="footer-items" to={"/tees"}>
