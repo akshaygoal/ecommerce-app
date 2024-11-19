@@ -127,6 +127,7 @@ p {
 }
 .search-nav,
 .cart-nav {
+  cursor: pointer;
   color: #fff;
   font-size: 20px;
 }
